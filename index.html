@@ -3,24 +3,49 @@
 <head>
 	
 	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
 
 	<title>Meet Capki Kim</title>
 
-<script>
-	$(document).ready(function(){
-		$('html').click(function(){
-			$('#intro').fadeOut(slow);
-		});
-sadfds
-	});
-</script>
 
 </head>
 
 <body id="intro">
-	<div id="shade">
-	</div>
+	<nav>
+		<div class="logo">
+			<img src="img/logo.png"/>
+		</div>
 
+		<ul class="menu">
+			<li id="home-menu">home</li>
+			<li>live</li>
+			<li>work</li>
+		</ul>
+	</nav>
+
+	<div>
+		<div id="shade">
+			<img src="img/black.png"/>
+		</div>
+	</div>
+	<main>
+		<section class="cd-intro">
+			<h1 class="cd-headline rotate-1">
+				<span style="color:white">He loves</span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible">people.</b>
+					<b>to travel.</b>
+					<b>to play the guitar.</b>
+					<b>to code.</b>
+				</span>
+			</h1>
+		</section> <!-- cd-intro -->
+	</main>
+
+	<script src="script.js"></script>
 </body>
 </html>

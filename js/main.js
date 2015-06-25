@@ -152,12 +152,3 @@ jQuery(document).ready(function($){
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
 });
-
-var main = function(){
-
-	$(document).ready(function(){
-		$('#shade img').fadeOut(8000);
-	});
-}
-
-$(document).ready(main);
