@@ -1,18 +1,9 @@
 jQuery(document).ready(function($){
 	//set animation timing
-	var animationDelay = 2500,
-		//loading bar effect
-		barAnimationDelay = 3800,
-		barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
+	var animationDelay = 2500,		
 		//letters effect
-		lettersDelay = 50,
-		//type effect
-		typeLettersDelay = 150,
-		selectionDuration = 500,
-		typeAnimationDelay = selectionDuration + 800,
-		//clip effect 
-		revealDuration = 600,
-		revealAnimationDelay = 1500;
+		lettersDelay = 50;
+
 	
 	initHeadline();
 	
@@ -156,8 +147,63 @@ jQuery(document).ready(function($){
 var main = function(){
 
 	$(document).ready(function(){
-		$('#shade img').fadeOut(8000);
+		$('#shade img').fadeOut(6000);
+		$('#m1').animate({
+			left:"695px",
+			bottom: "170px"
+		}, 1000);
+
+		$('#m2').animate({
+			left:"760px",
+			bottom: "170px"
+		}, 2500);
+
+		$('#m3').animate({
+			left:"800px",
+			bottom: "170px"
+		}, 4000);
+
+		$('#m4').animate({
+			left:"840px",
+			bottom: "170px"
+		}, 5500);
+
+		$('#n1').animate({
+			left:"830px",
+		}, 2000);
+
+		$('#n2').animate({
+			left:"875px",
+		}, 4000);
+
+		$('#n3').animate({
+			left:"910px",
+		}, 6000);
 	});
+
+	$(".animsition-overlay").animsition({
+  
+    inClass               :   'overlay-slide-in-top',
+    outClass              :   'overlay-slide-out-top',
+    inDuration            :    1500,
+    outDuration           :    800,
+    linkElement           :   '.animsition-link',
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    true,
+    loadingParentElement  :   'body', //animsition wrapper element
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    
+    overlay               :   true,
+    
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'body'
+  });
 }
 
 $(document).ready(main);

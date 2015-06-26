@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
+	<!-- animsition CSS -->
+	<link rel="stylesheet" href="animsition-master/dist/css/animsition.min.css">
+
+	<!-- vendor js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<!-- animsition js -->
+	<script src="animsition-master/dist/js/jquery.animsition.min.js"></script>
 
     <title>Meet Capki Kim</title>
 
@@ -15,16 +23,27 @@
 </head>
 
 <body id="intro">
-    <container>
+    <div>
+    	<p id="m1">M</p>
+    	<p id="m2">e</p>
+    	<p id="m3">e</p>
+    	<p id="m4">t</p>
+		<p id="n1">C</p>
+		<p id="n2">a</p>
+		<p id="n3">p</p>
+	</div>
+
     <nav>
         <div class="logo">
             <a href="index.html"><img src="img/logo.png"/></a>
         </div>
 
         <ul class="menu">
-            <li id="home-menu"><a id="link1" href="#">home</a></li>
-            <li><a id="link2" href="#">live</a></li>
-            <li><a id="link3" href="#">work</a></li>
+        	<div class="animsition-overlay" data-animsition-overlay="true">
+	            <li id="home-menu"><a class="animsition-link" id="link1" href="index.html">home</a></li>
+	            <li><a class="animsition-link" id="link2" href="index.html">live</a></li>
+	            <li><a class="animsition-link" id="link3" href="index.html">work</a></li>
+            </div>
         </ul>
     </nav>
 
@@ -46,7 +65,9 @@
             </h1>
         </section> <!-- cd-intro -->
     </main>
-    </container>
+    <footer>
+    	<p>&copy; <a href="index.html">Capki Kim</a> 2015 | photos by <a href="#">Anjo Media</a> | design by <a href="#"> Sungho Youn</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
