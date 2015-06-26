@@ -1,28 +1,55 @@
 
 body{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #home {
-	background:url('img/johnny.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	z-index: -1;
+    background:url('img/johnny.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      z-index: -1;
 }
 
-nav {
+ul li a {
+  color: #fff;
+}
 
+#link1:hover{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition-duration:1s;
+  -moz-transition-duration:1s;
+  transition-duration:1s;
+  text-decoration: none;
+}
+
+#link2:hover, #link3:hover{
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.5,1.5);
+  transition-duration:2s;
+  /*-webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -webkit-transition-duration:2s;
+  -moz-transition-duration:2s;
+  transition-duration:2s;*/
+}
+
+ul li a:visited{
+  color: #fff;
 }
 
 .menu li{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
-  margin: 30px;
+  font-size: 32px;
+  margin: 35px;
   float:right;
-  display: inline-block;
+  display: block;
   color: white;
   list-style-type: none;
   position:relative;
@@ -30,16 +57,27 @@ nav {
   right:20px;
 }
 
+
 #home-menu{
-  border: 1px solid white; 
-  border-left: 5px;
-  border-right: 5px;
+  border: 1px solid white;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#home-menu:hover{
+  background-color:gray;
 }
 
 .logo {
   position:fixed;
-  margin-left: 15px;
-  top: 20px;
+  margin-left: 40px;
+  top: 30px;
+}
+
+.logo:hover{
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 section h1 span{
@@ -47,30 +85,30 @@ section h1 span{
 }
 
 /*#intro {
-	background:url('img/waterdrop.jpg') no-repeat center center relative;
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
-	  	z-index: 1
+    background:url('img/waterdrop.jpg') no-repeat center center relative;
+        -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          z-index: 1
 }*/
 
 #shade img {
-	width:140%;
-	position:fixed;
-	z-index: 0;
+    width:140%;
+    position:fixed;
+    z-index: 0;
   top:-20px;
 
 }
 
-h1 { 
-    font-family:"Arvo";
-	font-weight:normal;
-	font-size: 25px;
-	text-align: center;
-	color: #fff;
-	margin: 0;
-	padding: 0;
+h1 {
+  font-family:"Arvo";
+  font-weight:normal;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
   position:fixed;
   bottom: 20px;
   right: 20px;
