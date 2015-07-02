@@ -149,35 +149,35 @@ var main = function(){
 	$(document).ready(function(){
 		$('#shade img').fadeOut(6000);
 		$('#m1').animate({
-			left:"695px",
+			left:"965px",
 			bottom: "170px"
 		}, 1000);
 
 		$('#m2').animate({
-			left:"760px",
+			left:"1025px",
 			bottom: "170px"
 		}, 2500);
 
 		$('#m3').animate({
-			left:"800px",
+			left:"1060px",
 			bottom: "170px"
 		}, 4000);
 
 		$('#m4').animate({
-			left:"840px",
+			left:"1100px",
 			bottom: "170px"
 		}, 5500);
 
 		$('#n1').animate({
-			left:"830px",
+			left:"1095px",
 		}, 2000);
 
 		$('#n2').animate({
-			left:"875px",
+			left:"1135px",
 		}, 4000);
 
 		$('#n3').animate({
-			left:"910px",
+			left:"1170px",
 		}, 6000);
 	});
 
